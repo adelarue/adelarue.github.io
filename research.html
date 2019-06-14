@@ -7,43 +7,118 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
     <script src="https://kit.fontawesome.com/589f919715.js"></script>
+    <link rel="stylesheet" href="css/academicons.min.css"/>
     <title>Arthur Delarue</title>
   </head>
   <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-
-    <!-- Navbar brand -->
-    <a class="navbar-brand" href="index.html">Arthur Delarue</a>
-
-    <!-- Collapse button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="fas fa-bars"></span>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="basicExampleNav">
-
-      <!-- Links -->
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="research.html">Research</a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top" style="background-color: #a31f34">
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="index.html">&nbsp;&nbsp;Arthur Delarue&nbsp;&nbsp;&nbsp;</a>
+      <!-- Collapse button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fas fa-bars"></span>
+      </button>
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="basicExampleNav">
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="research.html">Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="teaching.html">Teaching</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="media.html">Press</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row" style="margin-top: 10%">
+        <div class="col-md-12">
+          <h3>Publications</h3>
+        </div>
+        <div id="accordion" role="tablist" aria-multiselectable="true" class="myaccordion">
+          <div class="card">
+            <div class="card-header" role="tab" id="headingOne">
+              <div class="mb-0">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <b>Optimizing Schools' Start Time and Bus Routes</b>
+              </a>
+              (with D. Bertsimas and S. Martin). <i> Proceedings of the National Academy of Sciences</i> 116(13): 5943-5948 (2019). <br>
+              <i class="fas fa-star"></i><i> Franz Edelman Award Finalist (2019). </i> <br>
+              <i class="fas fa-star"></i><i> MIT ORC Best Student Paper (2018). </i> <br>
+              <i class="fas fa-star"></i><i> INFORMS Doing Good With Good OR Student Paper Competition Runner-up (2018). </i>
+              </div>
+            </div>
+            <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+              <div class="card-body">
+                <b> Summary. </b> Spreading start times allows school districts to reduce transportation costs by reusing buses between schools. However, assigning each school a time involves both estimating the impact on transportation costs and reconciling additional competing objectives. These challenges force many school districts to make myopic decisions, leading to an expensive and inequitable status quo. For instance, most American teenagers start school before 8:00 AM, despite evidence of significant associated health issues. We propose an algorithm to jointly solve the school bus routing and bell time selection problems. Our application in Boston led to $5 million in yearly savings (maintaining service quality despite a 50-bus fleet reduction) and to the unanimous approval of the first school start time reform in 30 years.<br>
+                <button type="button" class="btn btn-outline-primary btn-sm"> 
+                  <a href="https://www.pnas.org/cgi/doi/10.1073/pnas.1811462116" style="color:inherit">Paper</a>
+                </button>
+                <button type="button" class="btn btn-outline-primary btn-sm"> 
+                  <a href="files/optimizing-school-start-times.pdf" style="color:inherit">PDF</a>
+                </button>
+                <button type="button" class="btn btn-outline-primary btn-sm"> 
+                  <a href="files/school-buses-to-bell-times.pdf" style="color:inherit">Preprint</a>
+                </button>
+                <button type="button" class="btn btn-outline-primary btn-sm"> 
+                  <a href="https://sinews.siam.org/Details-Page/a-school-bus-trip-to-the-crossroads-of-policy-and-optimization-1" style="color:inherit">Blog</a>
+                </button>
+                <button type="button" class="btn btn-outline-primary btn-sm"> 
+                  <a href="https://github.com/mitschoolbus/SchoolBusRouting" style="color:inherit">Code</a>
+                </button>
+<!--                 <button class="btn btn-primary" role="button" href="https://www.pnas.org/cgi/doi/10.1073/pnas.1811462116">PDF</button> -->
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab" id="headingTwo">
+              <div class="mb-0">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <b>Travel Time Estimation in the Age of Big Data</b>
+              </a>
+              (with D. Bertsimas, P. Jaillet and S. Martin). <i> Operations Research</i> 67(2): 498-515 (2019).
+              </div>
+            </div>
+            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="card-body">
+                <b> Abstract. </b> Twenty-first century urban planners have identified the understanding of complex city traffic patterns as a major priority, leading to a sharp increase in the amount and the diversity of traffic data being collected. For instance, taxi companies in an in- creasing number of major cities have started recording metadata for every individual car ride, such as its origin, destination, and travel time. In this paper, we show that we can leverage network optimization insights to extract accurate travel time estimations from such origin–destination data, using information from a large number of taxi trips to re- construct the traffic patterns in an entire city. We develop a method that tractably exploits origin–destination data, which, because of its optimization framework, could also take advantage of other sources of traffic information. Using synthetic data, we establish the robustness of our algorithm to high variance data, and the interpretability of its results. We then use hundreds of thousands of taxi travel time observations in Manhattan to show that our algorithm can provide insights about urban traffic patterns on different scales and accurate travel time estimations throughout the network.<br>
+                <button type="button" class="btn btn-outline-primary btn-sm"> 
+                  <a href="https://doi.org/10.1287/opre.2018.1784" style="color:inherit">Paper</a>
+                </button>
+                <button type="button" class="btn btn-outline-primary btn-sm"> 
+                  <a href="files/travel-time-estimation.pdf" style="color:inherit">Preprint</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>                     
+      </div>
     </div>
-  </nav>
-
-
-    <h1>Hello, world!</h1>
-    <h1>Hello, world!</h1>
-    <h1>Hello, world!</h1>
-    <h1>Hello, world!</h1>
-    <h1>Hello, world!</h1>
+    <div class="container">
+      <div class="row" style="margin-top: 5%">
+        <div class="col-md-12">
+        <h3>Talks</h3> <br>
+        <b>MIT LIDS</b> Annual Student Conference, Cambridge, 2019. <i>Driving Policy with Optimization.</i> <br>
+        <i class="fas fa-star"></i> <i>Runner-up, Best Student Presentation.</i> <br>
+        <b>INFORMS</b> Annual Meeting, Phoenix, 2018. <i>Finding Equitable Start Times for Boston Public Schools.</i> <br>
+        <b>MIT ORC</b> Fall Seminar Series, Cambridge, 2018. <i>Driving Policy with Optimization.</i> <br>
+        <b>ISMP</b> Triennial Meeting, Bordeaux, France, 2018. <i>Travel Time Estimation in the Age of Big Data.</i> <br>
+        <b>MIT ORC</b> Special Seminar on Operations Research for Social Good, Cambridge, 2018. <i>8 Months on a School Bus: Analytics for Public Policy.</i> <br>
+        <b>INFORMS</b> Annual Meeting, Houston, 2017. <i>Travel Time Estimation in the Age of Big Data.</i><br>
+        </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
