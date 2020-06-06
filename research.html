@@ -47,17 +47,50 @@
           <h3>Publications</h3>
         </div>
         <div id="accordion" role="tablist" aria-multiselectable="true" class="myaccordion">
+          <!-- Rl for CVRP -->
           <div class="card">
-            <div class="card-header" role="tab" id="headingOne">
+            <div class="card-header" role="tab" id="headingCVRP">
               <div class="mb-0">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <a data-toggle="collapse" href="#collapseCVRP" aria-expanded="true" aria-controls="collapseCVRP">
+              <b>Reinforcement Learning with Combinatorial Actions: Application to Vehicle Routing</b>
+              </a>
+              (with R. Anderson and C. Tjandraatmadja). Submitted (2020). <br>
+              </div>
+            </div>
+            <div id="collapseCVRP" class="collapse" role="tabpanel" aria-labelledby="headingCVRP" data-parent="#accordion">
+              <div class="card-body" style="margin-left: 2%">
+                <i> Abstract. </i> Value-function-based methods have long played an important role in reinforcement learning. However, finding the best next action given a value function of arbitrary complexity is nontrivial when the action space is too large for enumeration. We develop a framework for value-function-based deep reinforcement learning with a combinatorial action space, in which the action selection problem is explicitly formulated as a mixed-integer optimization problem. As a motivating example, we present an application of this framework to the capacitated vehicle routing problem (CVRP), a combinatorial optimization problem in which a set of locations must be covered by a fleet of vehicles with limited capacity. On each instance, we model an action as the construction of a single vehicle's entire itinerary, and consider a deterministic policy which is improved through a simple policy iteration algorithm.  Our approach is competitive with other reinforcement learning methods and produces near-optimal results on standard library instances of medium size.<br><br>
+              </div>
+            </div>
+          </div>
+          <!-- COVID-19 -->
+          <div class="card">
+            <div class="card-header" role="tab" id="headingCovid">
+              <div class="mb-0">
+              <a data-toggle="collapse" href="#collapseCovid" aria-expanded="true" aria-controls="collapseCovid">
+              <b>From Predictions to Prescriptions: A Data-Driven Response to COVID-19</b>
+              </a>
+              (with D. Bertsimas et al.). Submitted (2020). <br>
+              </div>
+            </div>
+            <div id="collapseCovid" class="collapse" role="tabpanel" aria-labelledby="headingCovid" data-parent="#accordion">
+              <div class="card-body" style="margin-left: 2%">
+                <i> Abstract. </i> In the midst of the COVID-19 pandemic, healthcare providers and policy makers are wrestling with unprecedented challenges. How to treat COVID-19 patients with equipment shortages? How to allocate resources to combat the disease? How to plan for the next stages of the pandemic? We present a data-driven approach to tackle these challenges. We gather comprehensive data from various sources, including clinical studies, electronic medical records, and census reports. We develop algorithms to understand the disease, predict its mortality, forecast its spread, inform social distancing policies, and re-distribute critical equip- ment. These algorithms provide decision support tools that have been deployed on our publicly available website, and are actively used by hospitals, companies, and policy makers around the globe.<br><br>
+              </div>
+            </div>
+          </div>
+          <!-- Price of interpretability -->
+          <div class="card">
+            <div class="card-header" role="tab" id="headingInterpretability">
+              <div class="mb-0">
+              <a data-toggle="collapse" href="#collapseInterpretability" aria-expanded="true" aria-controls="collapseInterpretability">
               <b>The Price of Interpretability</b>
               </a>
               (with D. Bertsimas, P. Jaillet and S. Martin). Submitted (2019). <br>
               <i class="fas fa-star"></i><i> INFORMS Data Mining Section Best Student Paper Finalist (2019). </i>
               </div>
             </div>
-            <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div id="collapseInterpretability" class="collapse" role="tabpanel" aria-labelledby="headingInterpretability" data-parent="#accordion">
               <div class="card-body" style="margin-left: 2%">
                 <i> Abstract. </i> When quantitative models are used to support decision-making on complex and important topics, understanding a model's "reasoning" can increase trust in its predictions, expose hidden biases, or reduce vulnerability to adversarial attacks. However, the concept of interpretability remains loosely defined and application-specific. In this paper, we introduce a mathematical framework in which machine learning models are constructed in a sequence of interpretable steps. We show that for a variety of models, a natural choice of interpretable steps recovers standard interpretability proxies (e.g., sparsity in linear models). We then generalize these proxies to yield a parametrized family of consistent measures of model interpretability. This formal definition allows us to quantify the "price" of interpretability, i.e., the tradeoff with predictive accuracy. We demonstrate practical algorithms to apply our framework on real and synthetic datasets.<br><br>
                 <button type="button" class="btn btn-outline-primary btn-sm"> 
@@ -66,16 +99,17 @@
               </div>
             </div>
           </div>
+          <!-- IJAA BPS -->
           <div class="card">
-            <div class="card-header" role="tab" id="headingFour">
+            <div class="card-header" role="tab" id="headingEdelman">
               <div class="mb-0">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+              <a data-toggle="collapse" href="#collapseEdelman" aria-expanded="true" aria-controls="collapseEdelman">
               <b>Bus Routing Optimization Helps Boston Public Schools Design Better Policies</b>
               </a>
               (with D. Bertsimas, W. Eger, J. Hanlon, and S. Martin). <i>INFORMS Journal of Applied Analytics</i> 50(1):37-49 (2020). <br>
               </div>
             </div>
-            <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+            <div id="collapseEdelman" class="collapse" role="tabpanel" aria-labelledby="headingEdelman" data-parent="#accordion">
               <div class="card-body" style="margin-left: 2%">
                 <i> Abstract. </i> In the winter of 2016, Boston Public Schools (BPS) launched a crowdsourcing national competition to create a better way to construct bus routes to improve efficiency, deepen the ability to model policy changes, and realign school start times. The winning team came from the Massachusetts Institute of Technology (MIT). They developed an algorithm to construct school bus routes, by assigning students to stops, combining stops into routes, and optimally assigning vehicles to routes. BPS has used this algorithm for two years running; in the summer of 2017, this led to a 7% reduction in the BPS bus fleet. Bus routing optimization also gives BPS the unprecedented ability to understand the financial impact of new policies that affect transportation. In particular, the MIT research team developed a new mathematical model to select start times for all schools in the district in a way that takes transportation into account. Using this methodology, BPS proposed a solution that would have saved an additional $12M annually, and shifted students to more developmentally appropriate school start times (by reducing the number of high school students starting before 8:00 a.m. from 74% to 6% and the average number of elementary school students dismissed after 4:00 pm from 33% to 15%). However, 85% of the schools’ start times would have been changed, with a median change of one hour. This magnitude of change was too dramatic for the district to absorb, as evidenced by strong vocal opposition from some of the school communities who were negatively affected, and the plan was not implemented.<br><br>
                 <button type="button" class="btn btn-outline-primary btn-sm"> 
@@ -84,10 +118,11 @@
               </div>
             </div>
           </div>
+          <!-- PNAS BPS -->
           <div class="card">
-            <div class="card-header" role="tab" id="headingTwo">
+            <div class="card-header" role="tab" id="headingBelltimes">
               <div class="mb-0">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+              <a data-toggle="collapse" href="#collapseBelltimes" aria-expanded="true" aria-controls="collapseBelltimes">
               <b>Optimizing Schools' Start Time and Bus Routes</b>
               </a>
               (with D. Bertsimas and S. Martin). <i> Proceedings of the National Academy of Sciences</i> 116(13): 5943-5948 (2019). <br>
@@ -96,7 +131,7 @@
               <i class="fas fa-star"></i><i> INFORMS Doing Good With Good OR Student Paper Competition Runner-up (2018). </i>
               </div>
             </div>
-            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div id="collapseBelltimes" class="collapse" role="tabpanel" aria-labelledby="headingBelltimes" data-parent="#accordion">
               <div class="card-body" style="margin-left: 2%">
                 <i> Summary. </i> Spreading start times allows school districts to reduce transportation costs by reusing buses between schools. However, assigning each school a time involves both estimating the impact on transportation costs and reconciling additional competing objectives. These challenges force many school districts to make myopic decisions, leading to an expensive and inequitable status quo. For instance, most American teenagers start school before 8:00 AM, despite evidence of significant associated health issues. We propose an algorithm to jointly solve the school bus routing and bell time selection problems. Our application in Boston led to $5 million in yearly savings (maintaining service quality despite a 50-bus fleet reduction) and to the unanimous approval of the first school start time reform in 30 years.<br><br>
                 <button type="button" class="btn btn-outline-primary btn-sm"> 
@@ -117,16 +152,17 @@
               </div>
             </div>
           </div>
+          <!-- OR Travel Times -->
           <div class="card">
-            <div class="card-header" role="tab" id="headingThree">
+            <div class="card-header" role="tab" id="headingTravelTimes">
               <div class="mb-0">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <a class="collapsed" data-toggle="collapse" href="#collapseTravelTimes" aria-expanded="false" aria-controls="collapseTravelTimes">
               <b>Travel Time Estimation in the Age of Big Data</b>
               </a>
               (with D. Bertsimas, P. Jaillet, and S. Martin). <i> Operations Research</i> 67(2): 498-515 (2019).
               </div>
             </div>
-            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div id="collapseTravelTimes" class="collapse" role="tabpanel" aria-labelledby="headingTravelTimes" data-parent="#accordion">
               <div class="card-body" style="margin-left: 2%">
                 <i> Abstract. </i> Twenty-first century urban planners have identified the understanding of complex city traffic patterns as a major priority, leading to a sharp increase in the amount and the diversity of traffic data being collected. For instance, taxi companies in an in- creasing number of major cities have started recording metadata for every individual car ride, such as its origin, destination, and travel time. In this paper, we show that we can leverage network optimization insights to extract accurate travel time estimations from such origin–destination data, using information from a large number of taxi trips to re- construct the traffic patterns in an entire city. We develop a method that tractably exploits origin–destination data, which, because of its optimization framework, could also take advantage of other sources of traffic information. Using synthetic data, we establish the robustness of our algorithm to high variance data, and the interpretability of its results. We then use hundreds of thousands of taxi travel time observations in Manhattan to show that our algorithm can provide insights about urban traffic patterns on different scales and accurate travel time estimations throughout the network.<br><br>
                 <button type="button" class="btn btn-outline-primary btn-sm"> 
@@ -155,6 +191,8 @@
         <b>ISMP</b> Triennial Meeting, Bordeaux, France, 2018. <i>Travel Time Estimation in the Age of Big Data.</i> <br>
         <b>MIT ORC</b> Special Seminar on Operations Research for Social Good, Cambridge, 2018. <i>8 Months on a School Bus: Analytics for Public Policy.</i> <br>
         <b>INFORMS</b> Annual Meeting, Houston, 2017. <i>Travel Time Estimation in the Age of Big Data.</i><br>
+        <br>
+        <br>
         </div>
       </div>
     </div>
