@@ -9,6 +9,11 @@
   border: none;
 }
  
+.myaccordion .card,
+.myaccordion .card:last-child .card-footer {
+  border: none;
+}
+
 .myaccordion .card-header {
   border-bottom-color: #ffffff;
   background: transparent;
@@ -21,4 +26,9 @@
 .myaccordion a:hover{
 	color: #0074D9;
 	text-decoration: none;
+}
+
+.myaccordion .card-footer {
+  border-bottom-color: #ffffff;
+  background: transparent;
 }
