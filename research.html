@@ -59,69 +59,7 @@
           <h3>Publications</h3>
         </div>
         <div id="accordion" role="tablist" aria-multiselectable="true" class="myaccordion">
-          <!-- Rl for CVRP -->
-          <div class="card">
-            <div class="card-header" role="tab" id="headingCVRP">
-              <div class="mb-0">
-              <a data-toggle="collapse" href="#collapseCVRP" aria-expanded="true" aria-controls="collapseCVRP">
-              <b>Reinforcement Learning with Combinatorial Actions: Application to Vehicle Routing</b>
-              </a>
-              (with R. Anderson and C. Tjandraatmadja). Submitted (2020). <br>
-              </div>
-            </div>
-            <div id="collapseCVRP" class="collapse" role="tabpanel" aria-labelledby="headingCVRP" data-parent="#accordion">
-              <div class="card-body" style="margin-left: 2%">
-                <i> Abstract. </i> Value-function-based methods have long played an important role in reinforcement learning. However, finding the best next action given a value function of arbitrary complexity is nontrivial when the action space is too large for enumeration. We develop a framework for value-function-based deep reinforcement learning with a combinatorial action space, in which the action selection problem is explicitly formulated as a mixed-integer optimization problem. As a motivating example, we present an application of this framework to the capacitated vehicle routing problem (CVRP), a combinatorial optimization problem in which a set of locations must be covered by a fleet of vehicles with limited capacity. On each instance, we model an action as the construction of a single vehicle's entire itinerary, and consider a deterministic policy which is improved through a simple policy iteration algorithm.  Our approach is competitive with other reinforcement learning methods and produces near-optimal results on standard library instances of medium size.<br><br>
-              </div>
-            </div>
-          </div>
-          <!-- COVID-19 -->
-          <div class="card">
-            <div class="card-header" role="tab" id="headingCovid">
-              <div class="mb-0">
-              <a data-toggle="collapse" href="#collapseCovid" aria-expanded="true" aria-controls="collapseCovid">
-              <b>From Predictions to Prescriptions: A Data-Driven Response to COVID-19</b>
-              </a>
-              (with D. Bertsimas et al.). Submitted (2020). <br>
-              <p style="margin-left: 20px; margin-bottom: 0px">
-                <i class="fas fa-star"></i><i> William Pierskalla Best Paper Finalist (2020). </i>
-              </p>
-              </div>
-            </div>
-            <div id="collapseCovid" class="collapse" role="tabpanel" aria-labelledby="headingCovid" data-parent="#accordion">
-              <div class="card-body" style="margin-left: 2%">
-                <i> Abstract. </i> In the midst of the COVID-19 pandemic, healthcare providers and policy makers are wrestling with unprecedented challenges. How to treat COVID-19 patients with equipment shortages? How to allocate resources to combat the disease? How to plan for the next stages of the pandemic? We present a data-driven approach to tackle these challenges. We gather comprehensive data from various sources, including clinical studies, electronic medical records, and census reports. We develop algorithms to understand the disease, predict its mortality, forecast its spread, inform social distancing policies, and re-distribute critical equip- ment. These algorithms provide decision support tools that have been deployed on our publicly available website, and are actively used by hospitals, companies, and policy makers around the globe.<br><br>
-                <button type="button" class="btn btn-outline-primary btn-sm"> 
-                  <a href="https://www.medrxiv.org/content/10.1101/2020.06.26.20141127v1" style="color:inherit">Preprint</a>
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- Price of interpretability -->
-          <div class="card">
-            <div class="card-header" role="tab" id="headingInterpretability">
-              <div class="mb-0">
-                <a data-toggle="collapse" href="#collapseInterpretability" aria-expanded="true" aria-controls="collapseInterpretability">
-                <b>The Price of Interpretability</b>
-                </a>
-                (with D. Bertsimas, P. Jaillet and S. Martin). <br>
-                <p style="margin-left: 20px; margin-bottom: 0px">
-                  <i class="fas fa-star"></i><i> INFORMS Data Mining Section Best Student Paper Finalist (2019). </i>
-                </p>
-              </div>
-            </div>
-            <div id="collapseInterpretability" class="collapse" role="tabpanel" aria-labelledby="headingInterpretability" data-parent="#accordion">
-              <div class="card-body" style="margin-left: 2%">
-                <i> Abstract. </i> When quantitative models are used to support decision-making on complex and important topics, understanding a model's "reasoning" can increase trust in its predictions, expose hidden biases, or reduce vulnerability to adversarial attacks. However, the concept of interpretability remains loosely defined and application-specific. In this paper, we introduce a mathematical framework in which machine learning models are constructed in a sequence of interpretable steps. We show that for a variety of models, a natural choice of interpretable steps recovers standard interpretability proxies (e.g., sparsity in linear models). We then generalize these proxies to yield a parametrized family of consistent measures of model interpretability. This formal definition allows us to quantify the "price" of interpretability, i.e., the tradeoff with predictive accuracy. We demonstrate practical algorithms to apply our framework on real and synthetic datasets.<br><br>
-                <button type="button" class="btn btn-outline-primary btn-sm"> 
-                  <a href="https://arxiv.org/abs/1907.03419" style="color:inherit">Preprint</a>
-                </button>
-                <button type="button" class="btn btn-outline-primary btn-sm"> 
-                  <a href="https://arxiv.org/abs/1907.04669" style="color:inherit">Conference preprint</a>
-                </button>
-              </div>
-            </div>
-          </div>
+          
           <!-- IJAA BPS -->
           <div class="card">
             <div class="card-header" role="tab" id="headingEdelman">
@@ -210,7 +148,95 @@
       </div>
     </div>
     <div class="container">
-      <div class="row" style="margin-top: 5%">
+      <div class="row" style="margin-top: 3%">
+        <div class="col-md-12">
+          <h3>Completed Works</h3>
+        </div>
+        <div id="accordionCompleted" role="tablist" aria-multiselectable="true" class="myaccordion">
+          <!-- Scheduling -->
+          <div class="card">
+            <div class="card-header" role="tab" id="headingScheduling">
+              <div class="mb-0">
+                <a data-toggle="collapse" href="#collapseScheduling" aria-expanded="true" aria-controls="collapseScheduling">
+                <b>Optimizing Course Schedules in a Pandemic Setting</b>
+                </a>
+                (with C. Barnhart, D. Bertsimas and J. Yan). Submitted to <i>Manufacturing & Service Operations Management</i> (2020).
+              </div>
+            </div>
+            <div id="collapseScheduling" class="collapse" role="tabpanel" aria-labelledby="headingScheduling" data-parent="#accordionCompleted">
+              <div class="card-body" style="margin-left: 2%">
+                <i> Abstract. </i> We propose a simple model for a class of problems that we call university course scheduling problems, which encompass several related problems from the operations research literature, including course timetabling and academic curriculum planning. Our two-stage framework draws parallels between these problems and proposes a single optimization-based solving approach that can flexibly accommodate problem specifics. We applied our methods to course scheduling at MIT in the midst of unprecedented challenges and drastic capacity reductions during the COVID-19 pandemic.  Our models were critical to measuring the impact of several innovative proposals, including expanding the academic calendar, teaching across multiple rooms, and rotating student attendance through the week and school year. We projected that if MIT moved from its usual two-semester calendar to a three-semester calendar, over 90% of students' courses could be satisfied on campus even with each student only on campus for two out of the three semesters. Crucially, this could be accomplished without increasing faculty workloads.  For the Sloan School of Management, we also produced a new schedule which was implemented in the Fall 2020 semester. The schedule adhered to safety guidelines while allowing for half of Sloan courses to include a socially-distanced in-person component, and affording over two thirds of Sloan students the opportunity for socially distanced in-person learning in at least half their classes, despite a fourfold reduction in classroom capacity.<br><br>
+              </div>
+            </div>
+          </div>
+          <!-- Rl for CVRP -->
+          <div class="card">
+            <div class="card-header" role="tab" id="headingCVRP">
+              <div class="mb-0">
+              <a data-toggle="collapse" href="#collapseCVRP" aria-expanded="true" aria-controls="collapseCVRP">
+              <b>Reinforcement Learning with Combinatorial Actions: Application to Vehicle Routing</b>
+              </a>
+              (with R. Anderson and C. Tjandraatmadja). Submitted (2020). <br>
+              </div>
+            </div>
+            <div id="collapseCVRP" class="collapse" role="tabpanel" aria-labelledby="headingCVRP" data-parent="#accordionCompleted">
+              <div class="card-body" style="margin-left: 2%">
+                <i> Abstract. </i> Value-function-based methods have long played an important role in reinforcement learning. However, finding the best next action given a value function of arbitrary complexity is nontrivial when the action space is too large for enumeration. We develop a framework for value-function-based deep reinforcement learning with a combinatorial action space, in which the action selection problem is explicitly formulated as a mixed-integer optimization problem. As a motivating example, we present an application of this framework to the capacitated vehicle routing problem (CVRP), a combinatorial optimization problem in which a set of locations must be covered by a fleet of vehicles with limited capacity. On each instance, we model an action as the construction of a single vehicle's entire itinerary, and consider a deterministic policy which is improved through a simple policy iteration algorithm.  Our approach is competitive with other reinforcement learning methods and produces near-optimal results on standard library instances of medium size.<br><br>
+              </div>
+            </div>
+          </div>
+          <!-- COVID-19 -->
+          <div class="card">
+            <div class="card-header" role="tab" id="headingCovid">
+              <div class="mb-0">
+              <a data-toggle="collapse" href="#collapseCovid" aria-expanded="true" aria-controls="collapseCovid">
+              <b>From Predictions to Prescriptions: A Data-Driven Response to COVID-19</b>
+              </a>
+              (with D. Bertsimas et al.). Submitted to <i>Health Care Management Science</i> (2020). <br>
+              <p style="margin-left: 20px; margin-bottom: 0px">
+                <i class="fas fa-star"></i><i> William Pierskalla Best Paper Finalist (2020). </i>
+              </p>
+              </div>
+            </div>
+            <div id="collapseCovid" class="collapse" role="tabpanel" aria-labelledby="headingCovid" data-parent="#accordionCompleted">
+              <div class="card-body" style="margin-left: 2%">
+                <i> Abstract. </i> In the midst of the COVID-19 pandemic, healthcare providers and policy makers are wrestling with unprecedented challenges. How to treat COVID-19 patients with equipment shortages? How to allocate resources to combat the disease? How to plan for the next stages of the pandemic? We present a data-driven approach to tackle these challenges. We gather comprehensive data from various sources, including clinical studies, electronic medical records, and census reports. We develop algorithms to understand the disease, predict its mortality, forecast its spread, inform social distancing policies, and re-distribute critical equip- ment. These algorithms provide decision support tools that have been deployed on our publicly available website, and are actively used by hospitals, companies, and policy makers around the globe.<br><br>
+                <button type="button" class="btn btn-outline-primary btn-sm"> 
+                  <a href="https://www.medrxiv.org/content/10.1101/2020.06.26.20141127v1" style="color:inherit">Preprint</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Price of interpretability -->
+          <div class="card">
+            <div class="card-header" role="tab" id="headingInterpretability">
+              <div class="mb-0">
+                <a data-toggle="collapse" href="#collapseInterpretability" aria-expanded="true" aria-controls="collapseInterpretability">
+                <b>The Price of Interpretability</b>
+                </a>
+                (with D. Bertsimas, P. Jaillet and S. Martin). <br>
+                <p style="margin-left: 20px; margin-bottom: 0px">
+                  <i class="fas fa-star"></i><i> INFORMS Data Mining Section Best Student Paper Finalist (2019). </i>
+                </p>
+              </div>
+            </div>
+            <div id="collapseInterpretability" class="collapse" role="tabpanel" aria-labelledby="headingInterpretability" data-parent="#accordionCompleted">
+              <div class="card-body" style="margin-left: 2%">
+                <i> Abstract. </i> When quantitative models are used to support decision-making on complex and important topics, understanding a model's "reasoning" can increase trust in its predictions, expose hidden biases, or reduce vulnerability to adversarial attacks. However, the concept of interpretability remains loosely defined and application-specific. In this paper, we introduce a mathematical framework in which machine learning models are constructed in a sequence of interpretable steps. We show that for a variety of models, a natural choice of interpretable steps recovers standard interpretability proxies (e.g., sparsity in linear models). We then generalize these proxies to yield a parametrized family of consistent measures of model interpretability. This formal definition allows us to quantify the "price" of interpretability, i.e., the tradeoff with predictive accuracy. We demonstrate practical algorithms to apply our framework on real and synthetic datasets.<br><br>
+                <button type="button" class="btn btn-outline-primary btn-sm"> 
+                  <a href="https://arxiv.org/abs/1907.03419" style="color:inherit">Preprint</a>
+                </button>
+                <button type="button" class="btn btn-outline-primary btn-sm"> 
+                  <a href="https://arxiv.org/abs/1907.04669" style="color:inherit">Conference preprint</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row" style="margin-top: 3%">
         <div class="col-md-12">
           <h3>In Preparation</h3>
         </div>
@@ -228,22 +254,6 @@
             <div id="collapseESY" class="collapse" role="tabpanel" aria-labelledby="headingESY" data-parent="#accordion2">
               <div class="card-body" style="margin-left: 2%">
                 <i> Abstract. </i> Getting students to the right school at the right time can pose a challenge for school districts in the United States, which must balance educational objectives with operational ones, often on a shoestring budget. In this paper, we develop an optimization workflow to study the interplay between school assignment and school transportation. Our work combines the BiRD routing developments described in the previous section with an integer optimization formulation of the assignment problem. We show that our methodology can significantly streamline the operations of Boston Public Schools’ Extended School Year (ESY) summer program for special education students, leading to improvements of up to 10% in terms of cost or up to 15% in terms of student travel time. The optimization algorithms developed in this work were used by Boston Public Schools' Office of Special Education to assign students to Extended School Year sites in the summer of 2020. Due to the COVID-19 pandemic, the program was ultimately held remotely, but the groundwork has been laid for implementation in the summer of 2021.<br><br>
-              </div>
-            </div>
-          </div>
-          <!-- Scheduling -->
-          <div class="card">
-            <div class="card-header" role="tab" id="headingScheduling">
-              <div class="mb-0">
-                <a data-toggle="collapse" href="#collapseScheduling" aria-expanded="true" aria-controls="collapseScheduling">
-                <b>A Unified Model for Course Scheduling Under Sudden Scarcity: Applications to Pandemic Planning</b>
-                </a>
-                (with C. Barnhart, D. Bertsimas and J. Yan).
-              </div>
-            </div>
-            <div id="collapseScheduling" class="collapse" role="tabpanel" aria-labelledby="headingScheduling" data-parent="#accordion2">
-              <div class="card-body" style="margin-left: 2%">
-                <i> Abstract. </i> We propose a simple model for a class of problems that we call university course scheduling problems, which encompass several related problems from the operations research literature, including course timetabling and academic curriculum planning. Our two-stage framework draws parallels between these problems and proposes a single optimization-based solving approach that can flexibly accommodate problem specifics. We applied our methods to course scheduling at MIT in the midst of unprecedented challenges and drastic capacity reductions during the COVID-19 pandemic.  Our models were critical to measuring the impact of several innovative proposals, including expanding the academic calendar, teaching across multiple rooms, and rotating student attendance through the week and school year. We projected that if MIT moved from its usual two-semester calendar to a three-semester calendar, over 90% of students' courses could be satisfied on campus even with each student only on campus for two out of the three semesters. Crucially, this could be accomplished without increasing faculty workloads.  For the Sloan School of Management, we also produced a new schedule which was implemented in the Fall 2020 semester. The schedule adhered to safety guidelines while allowing for half of Sloan courses to include a socially-distanced in-person component, and affording over two thirds of Sloan students the opportunity for socially distanced in-person learning in at least half their classes, despite a fourfold reduction in classroom capacity.<br><br>
               </div>
             </div>
           </div>
