@@ -59,7 +59,22 @@
           <h3>Publications</h3>
         </div>
         <div id="accordion" role="tablist" aria-multiselectable="true" class="myaccordion">
-          
+          <!-- Rl for CVRP -->
+          <div class="card">
+            <div class="card-header" role="tab" id="headingCVRP">
+              <div class="mb-0">
+              <a data-toggle="collapse" href="#collapseCVRP" aria-expanded="true" aria-controls="collapseCVRP">
+              <b>Reinforcement Learning with Combinatorial Actions: Application to Vehicle Routing</b>
+              </a>
+              (with R. Anderson and C. Tjandraatmadja). Forthcoming in <i>NeurIPS</i> (2020). <br>
+              </div>
+            </div>
+            <div id="collapseCVRP" class="collapse" role="tabpanel" aria-labelledby="headingCVRP" data-parent="#accordion">
+              <div class="card-body" style="margin-left: 2%">
+                <i> Abstract. </i> Value-function-based methods have long played an important role in reinforcement learning. However, finding the best next action given a value function of arbitrary complexity is nontrivial when the action space is too large for enumeration. We develop a framework for value-function-based deep reinforcement learning with a combinatorial action space, in which the action selection problem is explicitly formulated as a mixed-integer optimization problem. As a motivating example, we present an application of this framework to the capacitated vehicle routing problem (CVRP), a combinatorial optimization problem in which a set of locations must be covered by a fleet of vehicles with limited capacity. On each instance, we model an action as the construction of a single vehicle's entire itinerary, and consider a deterministic policy which is improved through a simple policy iteration algorithm.  Our approach is competitive with other reinforcement learning methods and produces near-optimal results on standard library instances of medium size.<br><br>
+              </div>
+            </div>
+          </div>
           <!-- IJAA BPS -->
           <div class="card">
             <div class="card-header" role="tab" id="headingEdelman">
@@ -166,22 +181,6 @@
             <div id="collapseScheduling" class="collapse" role="tabpanel" aria-labelledby="headingScheduling" data-parent="#accordionCompleted">
               <div class="card-body" style="margin-left: 2%">
                 <i> Abstract. </i> We propose a simple model for a class of problems that we call university course scheduling problems, which encompass several related problems from the operations research literature, including course timetabling and academic curriculum planning. Our two-stage framework draws parallels between these problems and proposes a single optimization-based solving approach that can flexibly accommodate problem specifics. We applied our methods to course scheduling at MIT in the midst of unprecedented challenges and drastic capacity reductions during the COVID-19 pandemic.  Our models were critical to measuring the impact of several innovative proposals, including expanding the academic calendar, teaching across multiple rooms, and rotating student attendance through the week and school year. We projected that if MIT moved from its usual two-semester calendar to a three-semester calendar, over 90% of students' courses could be satisfied on campus even with each student only on campus for two out of the three semesters. Crucially, this could be accomplished without increasing faculty workloads.  For the Sloan School of Management, we also produced a new schedule which was implemented in the Fall 2020 semester. The schedule adhered to safety guidelines while allowing for half of Sloan courses to include a socially-distanced in-person component, and affording over two thirds of Sloan students the opportunity for socially distanced in-person learning in at least half their classes, despite a fourfold reduction in classroom capacity.<br><br>
-              </div>
-            </div>
-          </div>
-          <!-- Rl for CVRP -->
-          <div class="card">
-            <div class="card-header" role="tab" id="headingCVRP">
-              <div class="mb-0">
-              <a data-toggle="collapse" href="#collapseCVRP" aria-expanded="true" aria-controls="collapseCVRP">
-              <b>Reinforcement Learning with Combinatorial Actions: Application to Vehicle Routing</b>
-              </a>
-              (with R. Anderson and C. Tjandraatmadja). Submitted (2020). <br>
-              </div>
-            </div>
-            <div id="collapseCVRP" class="collapse" role="tabpanel" aria-labelledby="headingCVRP" data-parent="#accordionCompleted">
-              <div class="card-body" style="margin-left: 2%">
-                <i> Abstract. </i> Value-function-based methods have long played an important role in reinforcement learning. However, finding the best next action given a value function of arbitrary complexity is nontrivial when the action space is too large for enumeration. We develop a framework for value-function-based deep reinforcement learning with a combinatorial action space, in which the action selection problem is explicitly formulated as a mixed-integer optimization problem. As a motivating example, we present an application of this framework to the capacitated vehicle routing problem (CVRP), a combinatorial optimization problem in which a set of locations must be covered by a fleet of vehicles with limited capacity. On each instance, we model an action as the construction of a single vehicle's entire itinerary, and consider a deterministic policy which is improved through a simple policy iteration algorithm.  Our approach is competitive with other reinforcement learning methods and produces near-optimal results on standard library instances of medium size.<br><br>
               </div>
             </div>
           </div>
