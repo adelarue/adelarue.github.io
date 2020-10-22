@@ -73,16 +73,23 @@
               <a data-toggle="collapse" href="#collapseCVRP" aria-expanded="true" aria-controls="collapseCVRP">
               <b>Reinforcement Learning with Combinatorial Actions: Application to Vehicle Routing</b>
               </a>
-              (with R. Anderson and C. Tjandraatmadja). Forthcoming in <i>NeurIPS</i> (2020). <br>
+              (with R. Anderson and C. Tjandraatmadja). Forthcoming in <i>Advances in Neural Information Processing Systems</i> (NeurIPS 2020). <br>
               </div>
             </div>
             <div id="collapseCVRP" class="collapse" role="tabpanel" aria-labelledby="headingCVRP" data-parent="#accordion">
               <div class="card-body" style="margin-left: 2%">
-                <i> Abstract. </i> Value-function-based methods have long played an important role in reinforcement learning. However, finding the best next action given a value function of arbitrary complexity is nontrivial when the action space is too large for enumeration. We develop a framework for value-function-based deep reinforcement learning with a combinatorial action space, in which the action selection problem is explicitly formulated as a mixed-integer optimization problem. As a motivating example, we present an application of this framework to the capacitated vehicle routing problem (CVRP), a combinatorial optimization problem in which a set of locations must be covered by a fleet of vehicles with limited capacity. On each instance, we model an action as the construction of a single vehicle's entire itinerary, and consider a deterministic policy which is improved through a simple policy iteration algorithm.  Our approach is competitive with other reinforcement learning methods and produces near-optimal results on standard library instances of medium size.<br><br>
+                <div class="row">
+                  <div class="col-lg-8">
+                    <i> Abstract. </i> Value-function-based methods have long played an important role in reinforcement learning. However, finding the best next action given a value function of arbitrary complexity is nontrivial when the action space is too large for enumeration. We develop a framework for value-function-based deep reinforcement learning with a combinatorial action space, in which the action selection problem is explicitly formulated as a mixed-integer optimization problem. As a motivating example, we present an application of this framework to the capacitated vehicle routing problem (CVRP), a combinatorial optimization problem in which a set of locations must be covered by a single vehicle with limited capacity. On each instance, we model an action as the construction of a single route, and consider a deterministic policy which is improved through a simple policy iteration algorithm.  Our approach is competitive with other reinforcement learning methods and achieves an average gap of 1.7% with state-of-the-art OR methods on standard library instances of medium size. <br><br>
+                    <button type="button" class="btn btn-outline-primary btn-sm"> 
+                      <a href="https://studio.slideslive.com/web_recorder/share/20201021T184025Z__NeurIPS_posters__18073__reinforcement-learning-with-co?s=424216f5-ef5c-46ba-a6a7-fe482e293e82" style="color:inherit">Video</a>
+                    </button>
+                  </div>
+                  <div class="col-lg-4 pt-4 pt-lg-0">
+                    <img src="files/neurips-thumbnail.png" alt="travel-times-picture" width="100%">
+                  </div>
+                </div>
                 <!-- https://studio.slideslive.com/web_recorder/share/20201021T184025Z__NeurIPS_posters__18073__reinforcement-learning-with-co?s=424216f5-ef5c-46ba-a6a7-fe482e293e82 -->
-                <button type="button" class="btn btn-outline-primary btn-sm"> 
-                  <a href="https://studio.slideslive.com/web_recorder/share/20201021T184025Z__NeurIPS_posters__18073__reinforcement-learning-with-co?s=424216f5-ef5c-46ba-a6a7-fe482e293e82" style="color:inherit">Video</a>
-                </button>
               </div>
             </div>
           </div>
