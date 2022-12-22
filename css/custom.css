@@ -32,3 +32,7 @@
   border-bottom-color: #ffffff;
   background: transparent;
 }
+
+.myaccordion li {
+  list-style: disk;
+}
