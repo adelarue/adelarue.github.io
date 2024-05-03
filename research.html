@@ -69,6 +69,29 @@
           <h2>Publications</h2>
         </div>
         <div id="accordion" role="tablist" aria-multiselectable="true" class="myaccordion">
+          <!-- Shadow prices -->
+          <div class="card">
+            <div class="card-header" role="tab" id="headingShadowPrices">
+              <div class="mb-0">
+                <li><a data-toggle="collapse" href="#collapseShadowPrices" aria-expanded="false" aria-controls="collapseShadowPrices">
+                <u>Reducing Marketplace Interference Bias Via Shadow Prices</u>
+                </a>
+                (with I. Bright and I. Lobel).</li>
+                <li style="margin-left: 1em; list-style-type: none;">Forthcoming in <b><i>Management Science</i></b> (2024).</li>
+                <p style="margin-left: 30px; margin-bottom: 0px">
+                  <i class="fas fa-bookmark"></i><i> Early version accepted to EC (2023). </i>
+                </p>
+              </div>
+            </div>
+            <div id="collapseShadowPrices" class="collapse" role="tabpanel" aria-labelledby="headingShadowPrices" data-parent="#accordion">
+              <div class="card-body" style="margin-left: 2%">
+                <i> Summary. </i> Marketplace companies rely heavily on experimentation when making changes to the design or operation of their platforms. The workhorse of experimentation is the randomized controlled trial (RCT), or A/B test, in which users are randomly assigned to treatment or control groups. However, marketplace interference causes the Stable Unit Treatment Value Assumption (SUTVA) to be violated, leading to bias in the standard RCT metric. In this work, we propose techniques for platforms to run standard RCTs and still obtain meaningful estimates despite the presence of marketplace interference. We specifically consider a generalized matching setting, in which the platform explicitly matches supply with demand via a linear programming algorithm. Our first proposal is for the platform to estimate the value of global treatment and global control via optimization. We prove that this approach is unbiased in the fluid limit. Our second proposal is to compare the average shadow price of the treatment and control groups rather than the total value accrued by each group. We prove that this technique corresponds to the correct first-order approximation (in a Taylor series sense) of the value function of interest even in a finite-size system. We then use this result to prove that, under reasonable assumptions, our estimator is less biased than the RCT estimator. At the heart of our result is the idea that it is relatively easy to model interference in matching-driven marketplaces since, in such markets, the platform mediates the spillover. <br><br>
+                <button type="button" class="btn btn-outline-primary btn-sm"> 
+                  <a href="https://arxiv.org/abs/2205.02274" style="color:inherit">Preprint</a>
+                </button>
+              </div>
+            </div>
+          </div>
           <!-- Policy analytics -->
           <div class="card">
             <div class="card-header" role="tab" id="headingPA">
@@ -268,28 +291,6 @@
           <h2>Working Papers</h2>
         </div>
         <div id="accordionCompleted" role="tablist" aria-multiselectable="true" class="myaccordion">
-          <!-- Shadow prices -->
-          <div class="card">
-            <div class="card-header" role="tab" id="headingMissingData">
-              <div class="mb-0">
-                <a data-toggle="collapse" href="#collapseShadowPrices" aria-expanded="false" aria-controls="collapseShadowPrices">
-                <u>Reducing Marketplace Interference Bias Via Shadow Prices</u>
-                </a>
-                (with I. Bright and I. Lobel). Minor Revision at <b><i>Management Science</i></b> (2024).
-                <p style="margin-left: 30px; margin-bottom: 0px">
-                  <i class="fas fa-bookmark"></i><i> Early version accepted to EC (2023). </i>
-                </p>
-              </div>
-            </div>
-            <div id="collapseShadowPrices" class="collapse" role="tabpanel" aria-labelledby="headingShadowPrices" data-parent="#accordionCompleted">
-              <div class="card-body" style="margin-left: 2%">
-                <i> Summary. </i> Marketplace companies rely heavily on experimentation when making changes to the design or operation of their platforms. The workhorse of experimentation is the randomized controlled trial (RCT), or A/B test, in which users are randomly assigned to treatment or control groups. However, marketplace interference causes the Stable Unit Treatment Value Assumption (SUTVA) to be violated, leading to bias in the standard RCT metric. In this work, we propose a technique for platforms to run standard RCTs and still obtain meaningful estimates despite the presence of marketplace interference. We specifically consider a matching setting, in which the platform explicitly matches supply with demand via a matching algorithm. Our proposed technique is quite simple: instead of comparing the total value accrued by the treatment and control groups, we instead compare each group's average shadow price in the matching linear program. We prove that, in the fluid limit, our proposed technique corresponds to the correct first-order approximation (in a Taylor series sense) of the value function of interest. We then use this result to prove that, under reasonable assumptions, our estimator is less biased than the RCT estimator. At the heart of our result is the idea that it is relatively easy to model interference in matching-driven marketplaces since, in such markets, the platform intermediates the spillover. <br><br>
-                <button type="button" class="btn btn-outline-primary btn-sm"> 
-                  <a href="https://arxiv.org/abs/2205.02274" style="color:inherit">Preprint</a>
-                </button>
-              </div>
-            </div>
-          </div>
           <!-- SFUSD -->
           <div class="card">
             <div class="card-header" role="tab" id="headingSFUSD">
@@ -362,7 +363,7 @@
                 <a data-toggle="collapse" href="#collapseRLQAP" aria-expanded="false" aria-controls="collapseRLQAP">
                 <u>Solving the Quadratic Assignment Problem using Deep Reinforcement Learning</u>
                 </a>
-                (with P. S. Bagga). Submitted (2023).
+                (with P. S. Bagga).
               </div>
             </div>
             <div id="collapseRLQAP" class="collapse" role="tabpanel" aria-labelledby="headingRLQAP" data-parent="#accordionCompleted">
