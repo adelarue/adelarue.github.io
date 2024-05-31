@@ -69,6 +69,30 @@
           <h2>Publications</h2>
         </div>
         <div id="accordion" role="tablist" aria-multiselectable="true" class="myaccordion">
+          <!-- Missing 1 -->
+          <div class="card">
+            <div class="card-header" role="tab" id="headingMissingData1">
+              <div class="mb-0">
+                <li><a data-toggle="collapse" href="#collapseMissing1" aria-expanded="false" aria-controls="collapseMissing1">
+                <u>Simple Imputation Rules for Prediction with Missing Data: Theoretical Guarantees vs. Empirical Performance</u>
+                </a>
+                (with D. Bertsimas and J. Pauphilet).</li>
+                <li style="margin-left: 1em; list-style-type: none;">Forthcoming in <b><i>Transactions on Machine Learning Research</i></b> (2024).</li>
+                <p style="margin-left: 30px; margin-bottom: 0px">
+                  <i class="fas fa-star"></i><i> INFORMS Data Mining Section Best Paper Finalist (2021). </i>
+                </p>
+              </div>
+            </div>
+            <div id="collapseMissing1" class="collapse" role="tabpanel" aria-labelledby="headingMissing1" data-parent="#accordion">
+              <div class="card-body" style="margin-left: 2%">
+                <i> Abstract. </i> Missing values are a common issue in real-world datasets. 
+                Missing data is a common issue in real-world datasets. This paper studies the performance of impute-then-regress pipelines by contrasting theoretical and empirical evidence. We establish the asymptotic consistency of such pipelines for a broad family of imputation methods. While common sense suggests that a 'good' imputation method produces datasets that are plausible, we show, on the contrary, that, as far as prediction is concerned, crude can be good. Among others, we find that mode-impute is asymptotically sub-optimal, while mean-impute is asymptotically optimal. We then exhaustively assess the validity of these theoretical conclusions on a large corpus of synthetic, semi-real, and real datasets. While the empirical evidence we collect mostly supports our theoretical findings, it also highlights gaps between theory and practice and opportunities for future research, regarding the relevance of the MAR assumption, the complex interdependency between the imputation and regression tasks, and the need for realistic synthetic data generation models. <br><br>
+                <button type="button" class="btn btn-outline-primary btn-sm"> 
+                  <a href="https://arxiv.org/abs/2104.03158" style="color:inherit">Preprint</a>
+                </button>
+              </div>
+            </div>
+          </div>
           <!-- Shadow prices -->
           <div class="card">
             <div class="card-header" role="tab" id="headingShadowPrices">
@@ -312,29 +336,6 @@
                   <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4324076" style="color:inherit">Preprint</a>
                 </button>
                 
-              </div>
-            </div>
-          </div>
-          <!-- Missing 1 -->
-          <div class="card">
-            <div class="card-header" role="tab" id="headingMissingData1">
-              <div class="mb-0">
-                <a data-toggle="collapse" href="#collapseMissing1" aria-expanded="false" aria-controls="collapseMissing1">
-                <u>Simple Imputation Rules for Prediction with Missing Data: Contrasting Theoretical Guarantees with Empirical Performance</u>
-                </a>
-                (with D. Bertsimas and J. Pauphilet). Submitted (2024).<br>
-                <p style="margin-left: 30px; margin-bottom: 0px">
-                  <i class="fas fa-star"></i><i> INFORMS Data Mining Section Best Paper Finalist (2021). </i>
-                </p>
-              </div>
-            </div>
-            <div id="collapseMissing1" class="collapse" role="tabpanel" aria-labelledby="headingMissing1" data-parent="#accordionCompleted">
-              <div class="card-body" style="margin-left: 2%">
-                <i> Abstract. </i> Missing values are a common issue in real-world datasets. 
-                Missing data is a common issue in real-world datasets. This paper studies the performance of impute-then-regress pipelines by contrasting theoretical and empirical evidence. We establish the asymptotic consistency of such pipelines for a broad family of imputation methods. While common sense suggests that a 'good' imputation method produces datasets that are plausible, we show, on the contrary, that, as far as prediction is concerned, crude can be good. Among others, we find that mode-impute is asymptotically sub-optimal, while mean-impute is asymptotically optimal. We then exhaustively assess the validity of these theoretical conclusions on a large corpus of synthetic, semi-real, and real datasets. While the empirical evidence we collect mostly supports our theoretical findings, it also highlights gaps between theory and practice and opportunities for future research, regarding the relevance of the MAR assumption, the complex interdependency between the imputation and regression tasks, and the need for realistic synthetic data generation models. <br><br>
-                <button type="button" class="btn btn-outline-primary btn-sm"> 
-                  <a href="https://arxiv.org/abs/2104.03158" style="color:inherit">Preprint</a>
-                </button>
               </div>
             </div>
           </div>
