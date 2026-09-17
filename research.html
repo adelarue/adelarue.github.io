@@ -375,6 +375,26 @@
           <h2>Working Papers</h2>
         </div>
         <div id="accordionCompleted" role="tablist" aria-multiselectable="true" class="myaccordion">
+          <!-- Police Staffing -->
+          <div class="card">
+            <div class="card-header" role="tab" id="headingPoliceStaffing">
+              <div class="mb-0">
+                <a data-toggle="collapse" href="#collapsePoliceStaffing" aria-expanded="false" aria-controls="collapsePoliceStaffing">
+                <u>Data-Driven Police Staffing</u>
+                </a>
+                (with W. Xu). Major Revision, <i><b>Naval Research Logistics</b></i> (2026).
+              </div>
+            </div>
+            <div id="collapsePoliceStaffing" class="collapse" role="tabpanel" aria-labelledby="headingPoliceStaffing" data-parent="#accordionCompleted">
+              <div class="card-body" style="margin-left: 2%">
+                <i> Summary. </i> Large police departments usually operate by assigning regular patrol units to pre-defined regions, with backup units covering multiple regions to handle periods of high demand or replace unavailable regular units. We develop a data-driven approach to determine the optimal number and deployment of these backup units across different shifts, minimizing the expected travel time to incidents. The problem is formulated as a two-stage stochastic mixed-integer program. First-stage decisions determine the number of active backup units per zone and shift, while the second stage optimizes the dispatch of available units (both regular and backup) to the realized incident scenarios. This second-stage dispatch problem, which involves assigning units to incidents subject to incompatibility constraints derived from temporal and spatial conflicts, is shown to be NP-hard and closely related to the Optimal Cost Chromatic Partition problem from graph theory. To solve this challenging formulation, we design an enhanced integer L-shaped method. A key element of our approach is a disaggregated multi-cut strategy that leverages a natural decomposition of the problem by scenario, zone, and shift, leading to significant computational gains. We further accelerate the method with customized caching techniques. We validate our approach through an extensive case study using real data from the Atlanta Police Department, exploring the trade-offs between the number of units, operational costs, and service levels (response time and incident coverage). Our work provides a novel framework for jointly optimizing police staffing and dispatch under uncertainty, offering practical insights for decision-makers balancing resource constraints and response effectiveness.<br><br>
+                <button type="button" class="btn btn-outline-primary btn-sm"> 
+                  <a href="https://optimization-online.org/2026/09/data-driven-police-staffing/" style="color:inherit">Preprint</a>
+                </button>
+                
+              </div>
+            </div>
+          </div>
           <!-- Adaptive Pay -->
           <div class="card">
             <div class="card-header" role="tab" id="headingAdaptivePay">
